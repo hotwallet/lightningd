@@ -5,7 +5,7 @@ Run a lightning node on the Bitcoin network.
 ```sh
 docker run hotwallet/lightning lightningd \
 --network=bitcoin \
---bitcoin-rpcconnect=bitcoind.hotwallet.com \
+--bitcoin-rpcconnect=bitcoind.example.com \
 --bitcoin-rpcuser=rpcuser \
 --bitcoin-rpcpassword=rpcpassword
 ```
@@ -15,6 +15,6 @@ https://lightning.readthedocs.io/lightningd-config.5.html
 
 This image enables:
 - PostgreSQL
-- Prometheus (monitoring)
+- Sparko
 
 This docker image is based on [Blockstream's lightningd image](https://github.com/Blockstream/bitcoin-images/tree/master/lightningd).
